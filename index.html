@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="assets/Icon&Logo/icon.png">
+    <link rel="icon" type="image/png" href="assets/Icon&Logo/Logo.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Farasat • Dev</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -29,34 +29,53 @@
         text-shadow: 0 0 3px #fff, 0 0 6px rgba(255, 255, 255, 0.6),
           0 0 10px rgba(255, 255, 255, 0.4);
       }
+
       .bar {
             height: 10px;
             background-color: #00FF00;
             width: 0;
             transition: width 1.5s ease-in-out;
         }
+
         i {
           font-size: 15px;
         }
+
         ::selection {
           background-color: lightgreen;
           color: black;
         }
+
         html {
             scroll-behavior: smooth;
         }
+
         #bg-custom {
-           background-image: url('http://i.pinimg.com/736x/f1/b8/69/f1b8694299f12de6b68c231c23dc429e.jpg');
+           background-image: url('assets/Icon&Logo/Background.jpg');
         }
+
+        #bg-custom::before {
+           content: "";
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background: rgba(0, 0, 0, 0.5); /* Adjust darkness (0.5 = 50% dark) */
+        }
+
         #HTML {
           width: 80%;
         }
+
         #CSS {
           width: 75%;
         }
+
         #JS {
           width: 10%;
         }
+
     </style>
   </head>
   <body class="bg-black text-white">
@@ -64,10 +83,10 @@
     <nav
       class="fixed top-0 h-20 w-full bg-transparent text-white flex justify-between items-center px-6 py-4 z-50 hover:bg-black duration-500"
     >
-    
+
     <h1 class="text-xl font-bold leading-tight">
       <a href="#" class="block text-center">
-        <img class="h-8" src="assets/Icon&Logo/Vintage_Colorful_Retro_Vibes_Typographic_Product_Brand_Logo-removebg-preview.png" alt="">
+        <img class="h-40 w-44 mr-24" src="assets/Icon&Logo/dealwithit.png" alt="">
       </a>
     </h1>
 
@@ -81,7 +100,7 @@
           <a href="#" class="block px-4 py-2 hover:text-yellow-400 duration-500">Home <i class="bi bi-house-fill"></i></a>
         </li>
         <li>
-          <a href="#News-Content" class="block px-4 py-2 hover:text-yellow-400 duration-500">News <i class="bi bi-newspaper"></i></a>
+          <a href="#news" class="block px-4 py-2 hover:text-yellow-400 duration-500">News <i class="bi bi-newspaper"></i></a>
         </li>
         <li>
           <a href="#About-Me" class="block px-4 py-2 hover:text-yellow-400 duration-500">About <i class="bi bi-info-circle-fill"></i></a>
@@ -109,17 +128,24 @@
       <!-- Content -->
       <div class="relative z-10">
         <h1 class="text-5xl nunito-text">
-          Welcome to <span ><span class="font-bold">Farasat • </span><span class="font-bold text-yellow-400">Dev</span></span>
+          Welcome to Farasat • Dev
         </h1>
-        <p id="News-Content" class="text-lg roboto-condensed mt-4">
-          This is where amazing things happen!
+        <p class="text-lg roboto-condensed mt-4 md:text-white">
+          This is where it all starts!
         </p>
       </div>
     </section>
       
          <section id="news" class="p-10 text-center mt-20">
              <h2 class="text-3xl font-bold">News of the Day</h2>
-             <p class="bg-gray-900 mt-2 p-4 rounded-lg mx-auto w-3/4">Stay updated with the latest news!</p>
+             <p class="bg-gray-900 mt-24 p-4 rounded-lg mx-auto w-3/4">
+                <strong>Great Escape: Classroom Edition!</strong>
+              <br>
+              Today was a wild day in class! I didn't finish my classwork, so when the teacher asked me to explain what I wrote, I borrowed my friend's notebook (shoutout to Ameen 🙌) and told the story—even though it was completely off. Luckily, the teacher let me go with just a few ruler taps.
+              
+              But the real thriller came right after—she called Ameen next! He picked up the same notebook I had used earlier, and for a moment, I thought we were both done for. 😨 Somehow, he pulled off a smooth escape, getting away with just a light beating too.
+              
+              Thankfully, the teacher never checked the book in his hand! Talk about mission success! 🎯😂!</p>
          </section>
 
     <section class="bg-black h-screen flex w-auto ml-20 mr-20">
@@ -137,10 +163,10 @@
 
             I love building modern, interactive websites and aim to become a top full-stack developer. Outside coding, I enjoy football, anime, and exploring new tech trends. I was born on <span class="font-bold">March 1st</span>, and I also love croissants and the One Piece character <span class="font-bold">Luffy</span>. I'm always eager to learn, take on new challenges, and push my limits to improve every day. 🚀</h3>
           <p class="text-gray-400 mt-2 flex space-x-4 w-[70px]">
-            <a href="https://www.instagram.com/xfelix_1.3"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.threads.net/@xfelix_1.3?xmt=AQGz217x-CXpx4UxSKbhnYvmb6j61SLyNdaPkiwPEEMLr-M"><i class="bi bi-threads"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61555182236378"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.github.com/FarasatAhmad"><i class="bi bi-github"></i></a>
+            <a class="hover:text-white" href="https://www.instagram.com/xfelix_1.3"><i class="bi bi-instagram"></i></a>
+            <a class="hover:text-white" href="https://www.threads.net/@xfelix_1.3?xmt=AQGz217x-CXpx4UxSKbhnYvmb6j61SLyNdaPkiwPEEMLr-M"><i class="bi bi-threads"></i></a>
+            <a class="hover:text-white" href="https://www.facebook.com/profile.php?id=61555182236378"><i class="bi bi-facebook"></i></a>
+            <a class="hover:text-white" href="https://www.github.com/FarasatAhmad"><i class="bi bi-github"></i></a>
           </p>
       </div>
   </section>
@@ -205,7 +231,7 @@
       </div>
 
       <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <img src="assets/Arravinth.jpg" alt="Arravinth (V)" class="w-full h-48 object-cover rounded-lg mb-4">
+        <img src="assets/Aravinth.jpg" alt="Arravinth (V)" class="w-full h-48 object-cover rounded-lg mb-4">
         <h3 class="text-xl font-semibold">Arravinth (V)</h3>
         <p class="text-gray-400">A good English speaker and an advice giver.</p>
       </div>
@@ -244,7 +270,7 @@
             <textarea placeholder="Write Your Message" name="message" class="w-full p-3 bg-gray-900 border border-gray-100 rounded-md h-28" required></textarea>
         </div>
         <div class="mt-4">
-            <button type="submit" class="border-black w-40 bg-green-900 text-white font-semibold py-2 rounded-md text-lg hover:bg-green-200 hover:text-black transition duration-300">
+            <button type="submit" class="border-black w-40 bg-green-900 text-white font-semibold py-2 rounded-md text-lg hover:bg-green-200 hover:text-black transition duration-700">
                 Send Now
             </button>
         </div>
@@ -285,10 +311,10 @@
       <div>
         <h6 class="text-white text-lg uppercase tracking-wider mb-3">Quick Links</h6>
         <ul class="space-y-2">
-          <li><a href="#" class="hover:text-green-400">About Me</a></li>
-          <li><a href="#" class="hover:text-green-400">Contact</a></li>
-          <li><a href="#" class="hover:text-green-400">Resume</a></li>
-          <li><a href="#" class="hover:text-green-400">GitHub</a></li>
+          <li><a href="Pages/about.html" class="hover:text-green-400">About Me</a></li>
+          <li><a href="Pages/contact.html" class="hover:text-green-400">Contact</a></li>
+          <li><a href="Pages/skills&future-goals.html" class="hover:text-green-400">Resume</a></li>
+          <li><a href="https://github.com/DealWithFarasat" class="hover:text-green-400">GitHub</a></li>
         </ul>
       </div>
     </div>
@@ -313,7 +339,7 @@
     <!-- JavaScript for Mobile Menu -->
     <script>
       document.getElementById("menu-toggle").addEventListener("click", function() {
-            document.getElementById("menu").classList.toggle("hidden");
+            document.getElementById("nav-links").classList.toggle("hidden");
         });
         
         document.addEventListener("DOMContentLoaded", function() {
