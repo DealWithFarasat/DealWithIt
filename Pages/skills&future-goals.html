@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Skills & Goals | Farasat Dev</title>
+    <title>DealWithIt • My Skills & Goals</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-black text-white">
@@ -34,9 +34,9 @@
                 </div>
             </div>
             <div class="mb-4">
-                <p class="text-lg font-medium">JavaScript <span class="text-red-400">• 10%</span></p>
+                <p class="text-lg font-medium">JavaScript <span class="text-red-400">• <span id="js-percent">10%</span></span></p>
                 <div class="w-full bg-gray-700 h-3 rounded-full overflow-hidden">
-                    <div class="bg-green-400 h-3 w-[10%] rounded-full"></div>
+                    <div id="JS-bar" class="bg-green-400 h-3 rounded-full" style="width: 0;"></div>
                 </div>
             </div>
         </div>
@@ -55,12 +55,28 @@
     </section>
 
     <!-- Download Resume (For Future) -->
-    <section class="text-center py-16">
+    <section class="text-center py-20 h-32">
         <h2 class="text-3xl font-bold text-yellow-400 mb-4">Need My Resume?</h2>
-        <p class="text-lg">(If I ever make one, you can download it here.)</p>
-        <a href="../assets/Farasat_Resume.pdf" download class="mt-6 bg-yellow-400 text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition">
+        <p class="text-lg mb-10">(If I ever make one, you can download it here.)</p>
+        <a href="../assets/Farasat_Resume.pdf" download class="mt-20 bg-yellow-400 text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition">
             Download Resume (Coming Soon)
         </a>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let jsBar = document.getElementById("JS-bar");
+            let jsPercent = document.getElementById("js-percent");
+            let width = 0;
+            let interval = setInterval(() => {
+                if (width >= 10) {
+                    clearInterval(interval);
+                } else {
+                    width++;
+                    jsBar.style.width = width + "%";
+                    jsPercent.innerText = width + "%";
+                }
+            }, 100);
+        });
+    </script>
 </body>
 </html>
