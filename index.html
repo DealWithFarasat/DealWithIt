@@ -1,89 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="assets/Icon&Logo/Logo.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>DealWithIt • </title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,800&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
-      .nunito-text {
-        font-family: "Nunito", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 800;
-        font-style: normal;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/Icon&Logo/Logo.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>DealWithIt • </title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,800&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
-      .roboto-condensed {
-        font-family: "Roboto Condensed", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: normal;
-        font-style: normal;
-      }
+    .nunito-text {
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: normal;
+    }
 
-      .neon-text {
-        text-shadow: 0 0 3px #fff, 0 0 6px rgba(255, 255, 255, 0.6),
-          0 0 10px rgba(255, 255, 255, 0.4);
-      }
+    .roboto-condensed {
+      font-family: "Roboto Condensed", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: normal;
+      font-style: normal;
+    }
 
-      .bar {
-            height: 10px;
-            background-color: #00FF00;
-            width: 0;
-            transition: width 1.5s ease-in-out;
-        }
+    .neon-text {
+      text-shadow: 0 0 3px #fff, 0 0 6px rgba(255, 255, 255, 0.6),
+        0 0 10px rgba(255, 255, 255, 0.4);
+    }
 
-        i {
-          font-size: 15px;
-        }
+    .bar {
+      height: 10px;
+      background-color: #00FF00;
+      width: 0;
+      transition: width 1.5s ease-in-out;
+    }
 
-        ::selection {
-          background-color: lightgreen;
-          color: black;
-        }
+    i {
+      font-size: 15px;
+    }
 
-        html {
-            scroll-behavior: smooth;
-        }
+    ::selection {
+      background-color: lightgreen;
+      color: black;
+    }
 
-        #bg-custom {
-           background-image: url('assets/Icon&Logo/Background.jpg');
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        #bg-custom::before {
-           content: "";
-           position: absolute;
-           top: 0;
-           left: 0;
-           width: 100%;
-           height: 100%;
-           background: rgba(0, 0, 0, 0.5); /* Adjust darkness (0.5 = 50% dark) */
-        }
+    #bg-custom {
+      background-image: url('assets/Icon&Logo/Background.jpg');
+    }
 
-        #HTML {
-          width: 80%;
-        }
+    #bg-custom::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      /* Adjust darkness (0.5 = 50% dark) */
+    }
 
-        #CSS {
-          width: 75%;
-        }
+    #HTML {
+      width: 80%;
+    }
 
-        #JS {
-          width: 10%;
-        }
+    #CSS {
+      width: 75%;
+    }
 
-    </style>
-  </head>
-  <body class="bg-black text-white">
-    <!-- <a class="flex justify-end items-end" href=""> <img class="h-10 ml-2" src="assets/Icon&Logo/Logo.ico" alt="DealWithIt"></a> -->
-    <!-- Navbar -->
-    <nav
-      class="fixed top-0 h-16 w-full bg-transparent text-white flex justify-between items-center px-6 py-4 z-50 hover:bg-black duration-500"
-    >
+    #JS {
+      width: 10%;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white">
+  <!-- <a class="flex justify-end items-end" href=""> <img class="h-10 ml-2" src="assets/Icon&Logo/Logo.ico" alt="DealWithIt"></a> -->
+  <!-- Navbar -->
+  <nav
+    class="fixed top-0 h-16 w-full bg-transparent text-white flex justify-between items-center px-6 py-4 z-50 hover:bg-black duration-500">
 
     <h1 class="text-xl font-bold leading-tight">
       <a href="#" class="block text-center">
@@ -91,299 +92,323 @@
       </a>
     </h1>
 
-      <button id="menu-toggle" class="text-2xl md:hidden">&#9776;</button>
+    <button id="menu-toggle" class="text-2xl md:hidden">&#9776;</button>
 
-      <ul
-        id="nav-links"
-        class="hidden md:flex space-x-6 absolute top-16 left-0 w-full  md:relative md:top-0 md:w-auto md:flex-row md:space-x-6"
-      >
-        <li>
-          <a href="#" class="block px-4 py-2 hover:text-yellow-400 duration-500">Home <i class="bi bi-house-fill"></i></a>
-        </li>
-        <li>
-          <a href="#About-Me" class="block px-4 py-2 hover:text-yellow-400 duration-500">About <i class="bi bi-info-circle-fill"></i></a>
-        </li>
-        <li>
-          <a href="#skills" class="block px-4 py-2 hover:text-yellow-400 duration-500">Skills <i class="bi bi-code-slash"></i></a>
-        </li>
-        <li>
-          <a href="#Friends" class="block px-4 py-2 hover:text-yellow-400 duration-500">Friends <i class="bi bi-people-fill"></i></a>
-        </li>
-        <li>
-          <a href="#Contact" class="block px-4 py-2 hover:text-yellow-400 duration-500">Contact <i class="bi bi-envelope-fill"></i></a>
-        </li>
-      </ul>
-    </nav>
-    
+    <ul id="nav-links"
+      class="hidden md:flex space-x-6 absolute top-16 left-0 w-full  md:relative md:top-0 md:w-auto md:flex-row md:space-x-6">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:text-yellow-400 duration-500">Home <i class="bi bi-house-fill"></i></a>
+      </li>
+      <li>
+        <a href="#About-Me" class="block px-4 py-2 hover:text-yellow-400 duration-500">About <i
+            class="bi bi-info-circle-fill"></i></a>
+      </li>
+      <li>
+        <a href="#skills" class="block px-4 py-2 hover:text-yellow-400 duration-500">Skills <i
+            class="bi bi-code-slash"></i></a>
+      </li>
+      <li>
+        <a href="#Friends" class="block px-4 py-2 hover:text-yellow-400 duration-500">Friends <i
+            class="bi bi-people-fill"></i></a>
+      </li>
+      <li>
+        <a href="#Contact" class="block px-4 py-2 hover:text-yellow-400 duration-500">Contact <i
+            class="bi bi-envelope-fill"></i></a>
+      </li>
+    </ul>
+  </nav>
 
-    <!-- Front Page -->
-    <section
-      class="relative h-screen flex flex-col justify-center items-center text-center"
-    >
-      <!-- Background Image / Change it to your class boys foto-->
-      <div
-      id="bg-custom"
-      class="absolute inset-0 bg-cover bg-center "
-      ></div>
 
-      <!-- Content -->
-      <div class="relative z-10">
-        <h1 class="text-5xl nunito-text">
-          <span id="typing-text"></span> <!-- Typing effect here -->
+  <!-- Front Page -->
+  <section class="relative h-screen flex flex-col justify-center items-center text-center">
+    <!-- Background Image / Change it to your class boys foto-->
+    <div id="bg-custom" class="absolute inset-0 bg-cover bg-center "></div>
+
+    <!-- Content -->
+    <div class="relative z-10">
+      <h1 class="text-5xl nunito-text">
+        <span id="typing-text"></span> <!-- Typing effect here -->
       </h1>
       <p class="text-lg roboto-condensed mt-4 md:text-white">
-          This is where it all starts!
+        This is where it all starts!
       </p>
-      </div>
-    </section>
-      
-         <section id="news" class="p-10 text-center mt-20">
-             <h2 class="text-3xl font-bold">News of the Day</h2>
-             <p class="bg-gray-800 mt-14 p-4 rounded-lg mx-auto w-3/4">
-                <strong>The Showdown at P.E Field!</strong>
-              <br>
-              What started as a chill afternoon at the P.E field turned into something straight out of an action movie. 🎬
+    </div>
+  </section>
 
-              On Wednesday, Ameen and I were just hanging out when Kaiser Kabir called us up a steep path (if that's what you call it). At first, he threw small fruits at us, then stones, then bigger stones—until he took it to the next level and hurled a glass bottle near Ameen. Luckily, no injuries.
+  <section id="news" class="p-10 text-center mt-20">
+    <h2 class="text-3xl font-bold">News of the Day</h2>
+    <p class="bg-gray-800 mt-14 p-4 rounded-lg mx-auto w-3/4">
+      <strong>The Showdown at P.E Field!</strong>
+      <br>
+      What started as a chill afternoon at the P.E field turned into something straight out of an action movie. 🎬
 
-              Of course, we couldn't let it slide, so we returned fire—but just a little. Then Kaiser picked up some hard sticks, looked at us, and said, “Wan' fight?” We both just laughed because we knew he wouldn't dare. 😆
+      On Wednesday, Ameen and I were just hanging out when Kaiser Kabir called us up a steep path (if that's what you
+      call it). At first, he threw small fruits at us, then stones, then bigger stones—until he took it to the next
+      level and hurled a glass bottle near Ameen. Luckily, no injuries.
 
-              After walking around, we followed him a bit, then left him alone. But later, his friend came to us, saying Kaiser really wanted to fight. We went back, but we decided we wouldn't attack unless he touched us. As expected, he didn't.
+      Of course, we couldn't let it slide, so we returned fire—but just a little. Then Kaiser picked up some hard
+      sticks, looked at us, and said, “Wan' fight?” We both just laughed because we knew he wouldn't dare. 😆
 
-              That should've been the end of it, but Thursday brought new drama. We told our friend Antony about what happened, and since Kaiser had messed with him before, he was pissed. So, Antony, Ameen, Mung Lek, and Aravinth went up to Kaiser at the P.E field and pulled his shirt, asking him what his problem was before walking away.
+      After walking around, we followed him a bit, then left him alone. But later, his friend came to us, saying Kaiser
+      really wanted to fight. We went back, but we decided we wouldn't attack unless he touched us. As expected, he
+      didn't.
 
-              Now, here's where we made a big mistake. On Friday, Mung Lek—who didn't even do anything—suggested we tell the Principal what happened. We all went, including Kaiser, and explained everything one by one.
+      That should've been the end of it, but Thursday brought new drama. We told our friend Antony about what happened,
+      and since Kaiser had messed with him before, he was pissed. So, Antony, Ameen, Mung Lek, and Aravinth went up to
+      Kaiser at the P.E field and pulled his shirt, asking him what his problem was before walking away.
 
-              At first, the Principal scolded Kaiser since he started it. But then… she turned to us.
-              “Why didn't you inform any teachers? Why did you take matters into your own hands?”
+      Now, here's where we made a big mistake. On Friday, Mung Lek—who didn't even do anything—suggested we tell the
+      Principal what happened. We all went, including Kaiser, and explained everything one by one.
 
-              We had no answer. Just silence. After a long discussion, she hit us with the worst punishment—“Bring your parents or an older sibling to school.” 😨
+      At first, the Principal scolded Kaiser since he started it. But then… she turned to us.
+      “Why didn't you inform any teachers? Why did you take matters into your own hands?”
 
-          </p>
-         </section>
+      We had no answer. Just silence. After a long discussion, she hit us with the worst punishment—“Bring your parents
+      or an older sibling to school.” 😨
 
-         <section id="About-Me" class="flex flex-col justify-center items-center h-screen px-6">
-          <div class="max-w-3xl w-full text-left mx-auto"> <!-- Centering block but keeping text left-aligned -->
-              <h2 class="text-5xl font-bold text-yellow-400 mb-6 text-center">About Me</h2>
-              <p class="text-lg">
-                  I'm <strong>Farasat Ahmad</strong>, a passionate web developer who started coding when I was <strong>13</strong>.  
-                  At first, I struggled with `<div>` tags, but now, I build <strong>modern</strong> and <strong>interactive</strong> websites.  
-              </p>
-              <br>
-              <h3 class="text-2xl font-bold text-green-400">My Journey:</h3>
-              <ul class="list-disc pl-6">
-                  <li><strong>First Code:</strong> "Hello World!" in HTML.</li>
-                  <li><strong>Biggest Challenge:</strong> Understanding JavaScript functions (but now I got it!).</li>
-                  <li><strong>Biggest Achievement:</strong> Making this website using everything I’ve learned so far!</li>
-              </ul>
-              <br>
-              <p class="text-lg">
-                  Outside of coding, I'm a very <strong>curious person</strong> , I play <strong>football</strong> (mostly defense and dribbling),  
-                  and I have a weakness for <strong>croissants</strong>.  
-              </p>
+    </p>
+  </section>
+
+  <section id="About-Me" class="flex flex-col justify-center items-center h-screen px-6">
+    <div class="max-w-3xl w-full text-left mx-auto">
+      <h2 class="text-5xl font-bold text-yellow-400 mb-6 text-center">About Me</h2>
+      <p class="text-lg">
+        I'm <strong>Farasat Ahmad</strong>, a passionate web developer who started coding when I was
+        <strong>13</strong>.
+        At first, I struggled with `<div>` tags, but now, I build <strong>modern</strong> and
+          <strong>interactive</strong> websites.
+      </p>
+
+      <h3 class="text-2xl font-bold text-green-400 mt-6">My Journey:</h3>
+      <ul class="list-disc pl-6">
+        <li><strong>First Code:</strong> "Hello World!" in HTML.</li>
+        <li><strong>Biggest Challenge:</strong> Understanding JavaScript functions (but now I got it!).</li>
+        <li><strong>Biggest Achievement:</strong> Making this website using everything I’ve learned so far!</li>
+      </ul>
+
+      <p class="text-lg mt-6">
+        Outside of coding, I'm a very <strong>curious person</strong>, I play <strong>football</strong> (mostly defense
+        and dribbling),
+        and I have a weakness for <strong>croissants</strong>.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="skills" class="flex justify-center items-center h-screen bg-black">
+    <div class="w-full max-w-3xl p-6 rounded-lg shadow-lg">
+      <h3 class="text-4xl font-semibold mb-4 text-center">Skills</h3>
+      <div class="space-y-4">
+        <div>
+          <p class="font-medium">HTML • <span class="text-red-400">80%</span></p>
+          <div class="w-full bg-gray-700 h-3 rounded-full overflow-hidden">
+            <div id="HTML" class="bg-green-400 h-3 rounded-full transition-all duration-500"></div>
+
           </div>
-      </section>
-      
+        </div>
+        <div>
+          <p class="font-medium">CSS • <span class="text-blue-400">75%</span></p>
+          <div class="w-full bg-gray-700 h-3 rounded-full overflow-hidden">
+            <div id="CSS" class="bg-green-400 h-3 w-[75%] rounded-full transition-all duration-500"></div>
 
-          <!-- PORTFOLIO SECTION -->
-<section id="skills" class="flex justify-center items-center h-screen bg-black">
-  <div class="w-full max-w-3xl p-6 rounded-lg shadow-lg">
-    <h3 class="text-4xl font-semibold mb-4 text-center">Skills</h3>
-    <div class="space-y-4">
-      <div>
-        <p class="font-medium">HTML • <span class="text-red-400">80%</span></p>
-        <div class="w-full bg-gray-700 h-3 rounded-full overflow-hidden">
-          <div id="HTML" class="bg-green-400 h-3 rounded-full transition-all duration-500"></div>
-          
+          </div>
         </div>
-      </div>
-      <div>
-        <p class="font-medium">CSS • <span class="text-blue-400">75%</span></p>
-        <div class="w-full bg-gray-700 h-3 rounded-full overflow-hidden">
-          <div id="CSS" class="bg-green-400 h-3 w-[75%] rounded-full transition-all duration-500"></div>
-          
-        </div>
-      </div>
-      <div>
-        <p class="font-medium">JavaScript • <span class="text-yellow-400">10%</span></p>
-        <div class="w-full bg-gray-700 h-3 rounded-full overflow-hidden">
-          <div id="JS" class="bg-green-400 h-3 w-[10%] rounded-full transition-all duration-500"></div>
+        <div>
+          <p class="font-medium">JavaScript • <span class="text-yellow-400">10%</span></p>
+          <div class="w-full bg-gray-700 h-3 rounded-full overflow-hidden">
+            <div id="JS" class="bg-green-400 h-3 w-[10%] rounded-full transition-all duration-500"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="Friends" class="py-16 bg-black text-white h-screen">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center">My Friends</h2>
+  <section id="Friends" class="py-16 bg-black text-white h-screen">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center">My Friends</h2>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <!-- Friend Cards -->
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <img src="assets/Antony.jpg" alt="Antony" class="w-full h-48 object-cover rounded-lg mb-4">
-        <h3 class="text-xl font-semibold">Antony</h3>
-        <p class="text-gray-400">A great friend and a cool person to talk to! <br> Batman ❌ Blackman ✔️</p>
-      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Friend Cards -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <img src="assets/Antony.jpg" alt="Antony" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold">Antony</h3>
+          <p class="text-gray-400">A great friend and a cool person to talk to! <br> Batman ❌ Blackman ✔️</p>
+        </div>
 
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <img src="assets/Ayyan.jpg" alt="Ayyan Ahmed" class="w-full h-48 object-cover rounded-lg mb-4">
-        <h3 class="text-xl font-semibold">Ayyan Ahmed</h3>
-        <p class="text-gray-400">A creative editor with amazing skills. <br> Miss Anne's Husband</p>
-      </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <img src="assets/Ayyan.jpg" alt="Ayyan Ahmed" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold">Ayyan Ahmed</h3>
+          <p class="text-gray-400">A creative editor with amazing skills. <br> Miss Anne's Husband</p>
+        </div>
 
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <img src="assets/Shail.jpg" alt="Shail (Raj Kumar)" class="w-full h-48 object-cover rounded-lg mb-4">
-        <h3 class="text-xl font-semibold">Shail (Raj Kumar)</h3>
-        <p class="text-gray-400">The best problem solver. <br> (Can solve world hunger 😋)</p>
-      </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <img src="assets/Shail.jpg" alt="Shail (Raj Kumar)" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold">Shail (Raj Kumar)</h3>
+          <p class="text-gray-400">The best problem solver. <br> (Can solve world hunger 😋)</p>
+        </div>
 
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <img src="assets/Ameen.jpg" alt="Ameen Chopra" class="w-full h-48 object-cover rounded-lg mb-4">
-        <h3 class="text-xl font-semibold">Ameen Chopra <br><span class="text-gray-700">(Indian Scammer)</span></h3>
-        <p class="text-gray-400">A great YouTuber with over <span class="font-bold">1.9k</span> subscribers! <br> Beware of Scams!</p>
-      </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <img src="assets/Ameen.jpg" alt="Ameen Chopra" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold">Ameen Chopra <br><span class="text-gray-700">(Indian Scammer)</span></h3>
+          <p class="text-gray-400">A great YouTuber with over <span class="font-bold">1.9k</span> subscribers! <br>
+            Beware of Scams!</p>
+        </div>
 
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <img src="assets/Aravinth.jpg" alt="Arravinth (V)" class="w-full h-48 object-cover rounded-lg mb-4">
-        <h3 class="text-xl font-semibold">Arravinth (V)</h3>
-        <p class="text-gray-400">A good English speaker and an advice giver. <br>Sigma some more</p>
-      </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <img src="assets/Aravinth.jpg" alt="Arravinth (V)" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold">Arravinth (V)</h3>
+          <p class="text-gray-400">A good English speaker and an advice giver. <br>Sigma some more</p>
+        </div>
 
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <img src="assets/Salman.jpg" alt="M. Salman" class="w-full h-48 object-cover rounded-lg mb-4">
-        <h3 class="text-xl font-semibold">M.Salman</h3>
-        <p class="text-gray-400">A skilled footballer and Halimah's Husband.</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <img src="assets/Salman.jpg" alt="M. Salman" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold">M.Salman</h3>
+          <p class="text-gray-400">A skilled footballer and Halimah's Husband.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
-<section class="h-screen w-auto mt-96">
-  <div class="flex flex-col items-center">
-  <h1 id="Contact" class="text-5xl text-center font-bold text-white capitalize">Contact</h1>
-  <div class="md:w-2/3 p-6">
-    <div class="shadow-md rounded-lg p-6">
-      <form action="https://formspree.io/f/xdkenlkj" method="POST" class="mt-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="w-full">
-                <input type="text" placeholder="Your Name" name="name" class="w-full p-3 bg-gray-900 border border-gray-100 rounded-md" required>
+  <section class="h-screen w-auto mt-96">
+    <div class="flex flex-col items-center">
+      <h1 id="Contact" class="text-5xl text-center font-bold text-white capitalize">Contact</h1>
+      <div class="md:w-2/3 p-6">
+        <div class="shadow-md rounded-lg p-6">
+          <form action="https://formspree.io/f/xdkenlkj" method="POST" class="mt-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="w-full">
+                <input type="text" placeholder="Your Name" name="name"
+                  class="w-full p-3 bg-gray-900 border border-gray-100 rounded-md" required>
+              </div>
+              <div class="w-full">
+                <input type="email" placeholder="E-mail" name="email"
+                  class="w-full p-3 bg-gray-900 border border-gray-100 rounded-md" required>
+              </div>
+              <div class="w-full">
+                <input type="text" placeholder="Phone Number" name="phone"
+                  class="w-full p-3 bg-gray-900 border border-gray-100 rounded-md">
+              </div>
+              <div class="w-full">
+                <input type="text" placeholder="Subject" name="subject"
+                  class="w-full p-3 bg-gray-900 border border-gray-100 rounded-md">
+              </div>
             </div>
-            <div class="w-full">
-                <input type="email" placeholder="E-mail" name="email" class="w-full p-3 bg-gray-900 border border-gray-100 rounded-md" required>
+            <div class="mt-4">
+              <textarea placeholder="Write Your Message" name="message"
+                class="w-full p-3 bg-gray-900 border border-gray-100 rounded-md h-28" required></textarea>
             </div>
-            <div class="w-full">
-                <input type="text" placeholder="Phone Number" name="phone" class="w-full p-3 bg-gray-900 border border-gray-100 rounded-md">
-            </div>
-            <div class="w-full">
-                <input type="text" placeholder="Subject" name="subject" class="w-full p-3 bg-gray-900 border border-gray-100 rounded-md">
-            </div>
-        </div>
-        <div class="mt-4">
-            <textarea placeholder="Write Your Message" name="message" class="w-full p-3 bg-gray-900 border border-gray-100 rounded-md h-28" required></textarea>
-        </div>
-        <div class="mt-4">
-            <button type="submit" class="border-black w-40 bg-green-900 text-white font-semibold py-2 rounded-md text-lg hover:bg-green-200 hover:text-black transition duration-700">
+            <div class="mt-4">
+              <button type="submit"
+                class="border-black w-40 bg-green-900 text-white font-semibold py-2 rounded-md text-lg hover:bg-green-200 hover:text-black transition duration-700">
                 Send Now
-            </button>
+              </button>
+            </div>
+          </form>
         </div>
-      </form>
+      </div>
+      <div class="md:w-1/3"></div>
     </div>
+  </section>
+
+
+  </div>
   </div>
   <div class="md:w-1/3"></div>
-</div>
-</section>
-
-    
-    </div>
   </div>
-  <div class="md:w-1/3"></div>
-</div>
 
-<footer class="bg-gray-900 text-gray-400 py-12">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- About Section -->
-      <div>
-        <h6 class="text-white text-lg uppercase tracking-wider mb-3">About</h6>
-        <p class="text-justify text-gray-400">
-          Welcome to my portfolio! I am a passionate developer with expertise in JavaScript, HTML, CSS, and modern web development. This site showcases my work, skills, and projects.
-        </p>
-      </div>
-
-      <!-- Projects -->
-      <div>
-        <div class="flex">
-          <h6 class="text-white text-lg uppercase tracking-wider mb-3">Projects </h6> 
-          <p> (Coming Soon)</p>
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- About Section -->
+        <div>
+          <h6 class="text-white text-lg uppercase tracking-wider mb-3">About</h6>
+          <p class="text-justify text-gray-400">
+            Welcome to my portfolio! I am a passionate developer with expertise in JavaScript, HTML, CSS, and modern web
+            development. This site showcases my work, skills, and projects.
+          </p>
         </div>
-        <ul class="space-y-2">
-          <li><a href="#" class="hover:text-green-400">Personal Portfolio</a></li>
-          <li><a href="#" class="hover:text-green-400">Art Website</a></li>
-          <li><a href="#" class="hover:text-green-400">Movie Streaming Site</a></li>
-        </ul>
+
+        <!-- Projects -->
+        <div>
+          <div class="flex">
+            <h6 class="text-white text-lg uppercase tracking-wider mb-3">Projects </h6>
+            <p> (Coming Soon)</p>
+          </div>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-green-400">Personal Portfolio</a></li>
+            <li><a href="#" class="hover:text-green-400">Art Website</a></li>
+            <li><a href="#" class="hover:text-green-400">Movie Streaming Site</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h6 class="text-white text-lg uppercase tracking-wider mb-3">Quick Links</h6>
+          <ul class="space-y-2">
+            <li><a href="Pages/about.html" class="hover:text-green-400">About Me</a></li>
+            <li><a href="Pages/contact.html" class="hover:text-green-400">Contact</a></li>
+            <li><a href="Pages/skills&future-goals.html" class="hover:text-green-400">Resume</a></li>
+            <li><a href="https://github.com/DealWithFarasat" class="hover:text-green-400">GitHub</a></li>
+          </ul>
+        </div>
       </div>
 
-      <!-- Quick Links -->
-      <div>
-        <h6 class="text-white text-lg uppercase tracking-wider mb-3">Quick Links</h6>
-        <ul class="space-y-2">
-          <li><a href="Pages/about.html" class="hover:text-green-400">About Me</a></li>
-          <li><a href="Pages/contact.html" class="hover:text-green-400">Contact</a></li>
-          <li><a href="Pages/skills&future-goals.html" class="hover:text-green-400">Resume</a></li>
-          <li><a href="https://github.com/DealWithFarasat" class="hover:text-green-400">GitHub</a></li>
-        </ul>
+      <hr class="border-gray-700 my-8" />
+
+      <div class="flex flex-col md:flex-row items-center justify-between text-sm">
+        <p class="text-gray-500">&copy; 2025 All Rights Reserved by <span class="text-green-400">Farasat</span>.</p>
+
+        <div class="flex space-x-2 mt-4 md:mt-0">
+          <a href="#" class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-600"><i
+              class="bi bi-facebook"></i></a>
+          <a href="#" class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-400"><i
+              class="bi bi-instagram"></i></a>
+          <a href="#" class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-500"><i
+              class="bi bi-threads"></i></a>
+          <a href="#" class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-900"><i
+              class="bi bi-github"></i></a>
+        </div>
       </div>
     </div>
-
-    <hr class="border-gray-700 my-8" />
-
-    <div class="flex flex-col md:flex-row items-center justify-between text-sm">
-      <p class="text-gray-500">&copy; 2025 All Rights Reserved by <span class="text-green-400">Farasat</span>.</p>
-
-      <div class="flex space-x-2 mt-4 md:mt-0">
-        <a href="#" class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-600"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-400"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-500"><i class="bi bi-threads"></i></a>
-        <a href="#" class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-900"><i class="bi bi-github"></i></a>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 
 
-    <!-- JavaScript for Mobile Menu -->
-    <script>
-      document.getElementById("menu-toggle").addEventListener("click", function() {
-            document.getElementById("nav-links").classList.toggle("hidden");
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("nav-links").classList.toggle("hidden");
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const bars = document.querySelectorAll(".skill-bar");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.width = entry.target.dataset.width;
+          }
         });
-        
-        document.addEventListener("DOMContentLoaded", function() {
-            const bars = document.querySelectorAll(".skill-bar");
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.width = entry.target.dataset.width;
-                    }
-                });
-            }, { threshold: 0.5 });
-            
-            bars.forEach(bar => observer.observe(bar));
-        });
-        const text = "Welcome to DealWithIt";
+      }, {
+        threshold: 0.5
+      });
+
+      bars.forEach(bar => observer.observe(bar));
+    });
+    const text = "Welcome to DealWithIt";
     let index = 0;
+
     function typeEffect() {
-        if (index < text.length) {
-            document.getElementById("typing-text").innerHTML += text.charAt(index);
-            index++;
-            setTimeout(typeEffect, 100);
-        }
+      if (index < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100);
+      }
     }
     window.onload = typeEffect;
+  </script>
+</body>
 
-    </script>
-  </body>
 </html>
